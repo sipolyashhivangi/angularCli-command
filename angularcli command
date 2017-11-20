@@ -1,0 +1,71 @@
+Generating component - 
+
+ng generate component component-name or ng g c component-name
+
+Create component with options -
+
+ng g c component-name --flat -it -is --prefix my --spec false
+
+--flat  - not create component name folder
+--it  - not create component template file, use inline html
+--is  - not create component style file, use inline css
+--prefix - use my in selector ex. my-contact-list
+--spec -not create component spec.ts file 
+
+Generating Directive with options- 
+ng generative directive directive-name  or ng g d directive-name
+
+ng g d btnConffirm --flat false --prefix my --spec false
+
+--flat false - create folder for directive
+
+Generating Services with options-
+ng generate service service_name or ng g s service_name
+
+it will create service but not import in app module
+
+for importing ng g s contactData -m app.module 
+
+--flat, --spec
+
+Generating Pipes with options -
+
+ng generate pipe employeeTtile  or ng g p employeeTtile
+
+--flat, --spec
+
+Generating Class-
+
+ng generate class class_name  or ng g cl class_name
+
+Generating interface-
+ng generate interface interface_name or ng g i interface_name
+
+
+Generating Enumerations-
+ng generate enum enum_name or ng g e enum_name
+
+Generating inside Models folder-
+
+ng g cl models/contact
+ng g i models/person
+
+Generating Modules-
+ng generate module module_name or ng g m admin
+
+
+Generating routing-
+ng new demoApp --routing
+
+Open application in browser-
+ng serve -o or ng serve --open
+
+
+Adding Bootstrap-
+npm install --save bootstrap then add css link of bootstrap in angular-cli.json in styles
+
+Adding Font-awesome
+npm install --save font-awesome then add css link ofawesome fonts in angular-cli.json in styles
+
+ng serve -o -p 3000
+
